@@ -30,7 +30,7 @@
     {
       "unit-type": "lu",
       "label": "Radix Sort",
-      "basedir": "quick-sort",
+      "basedir": "radix-sort",
       "units": [
         {
           "unit-type": "aim"
