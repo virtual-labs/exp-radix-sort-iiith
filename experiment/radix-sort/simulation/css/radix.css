@@ -1,0 +1,52 @@
+#wrapper {
+    padding-top: 2%;
+}
+
+.array_size {
+    text-align: center;
+}
+
+#canvas_wrapper {
+  margin: 0px auto;
+}
+
+canvas{
+  padding-top:2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: auto;
+  display: block;
+  width: 787px;
+  height: 215px;
+}
+
+#legend-comment-wrapper {
+    padding-top: 2%;
+    height: 27vh;
+}
+
+.legend {
+    float: left;
+}
+
+.legend .red {
+    background-color: red;
+}
+
+.comment-box {
+    margin: auto;
+}
+
+.slidecontainer {
+    padding-top: 0%;
+}
+
+.buttons-wrapper {
+    text-align: center;
+    padding-top: 2%;
+}
+
+p,span {
+    font-size: 1.5vw;
+    text-align: center;
+}

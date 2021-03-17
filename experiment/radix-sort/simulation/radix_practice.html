@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Radix Sort</title>
+<link rel="stylesheet" href="../../assets/css/common-styles.css">
+    <link rel="stylesheet" href="css/radix.css">
+  </head>
+  <body>
+    <div class="instruction-box">
+      <button class="collapsible">Instructions</button>
+      <div class="content">
+        <ul>
+          <li>You will perform radix sort for a list
+            of <strong> random integers from 0 to 999</strong>
+            with a little help :)
+          </li>
+          <li>Type the bucket number(0-9) in the <strong> input
+            box </strong> and press the <strong> Step
+            button</strong>
+          </li>
+          <li> 
+            <strong>Reset button</strong> will give you a new
+            array to start all over!
+          </li>
+          <li>The <strong>current pointer</strong> points to
+            the array element which is going to be put in the
+            buckets next.
+          </li>
+          <li>Keep checking the <strong>comment box</strong> at
+            the bottom to see whether you are doing it
+            correctly, and also for <b>hints</b> if stuck.
+          </li>
+          <li>The array <strong>b</strong> is the array of
+            buckets used for each digit, such that the index of
+            the array corresponds to the digit accordingly.
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="wrapper">
+      <div class="array_size">
+        Enter number of elements in array (5-15) : 
+        <input class="text-box" type="number" id="array_length" value="8" min="5" max="15">
+        <button type="button" class="button-input" id="nelements">Change</button>
+      </div>
+      
+      <div id="canvas_wrapper">
+          <canvas id="canvas" width="1900" height="761"></canvas>
+      </div>
+      
+      <div id="legend-comment-wrapper">
+        <ul class="legend">
+          <li><span class="red"></span>Last element put into a bucket</li>
+        </ul>
+        
+        <div class="comment-box">
+            <b>Observations</b>
+            <p id="ins"></p>
+        </div>
+        
+      </div>
+      <div class="buttons-wrapper">
+        Enter bucket number(0-9) : <input class="text-box" type="number" id="inputnum" value="5" min="0" max="9">
+        <button type="button" class="button-input" id="step">Step</button>
+        <button type="button" class="button-input" id="reset">Reset</button>
+      </div>
+      
+    </div>
+    <script src="js/radix_lib.js"></script>
+    <script src="js/radix_practice.js"></script>
+<script src="../../assets/js/instruction-box.js"></script>
+  </body>
+</html>

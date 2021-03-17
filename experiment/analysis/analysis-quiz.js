@@ -89,44 +89,35 @@
 
 
      const myQuestions = [{
-            question: "1. Sample question1", ///// Write the question inside double quotes
+            question: "1.  What is the complexity of Radix sort?", ///// Write the question inside double quotes
             answers: {
-                a: "1", ///// Write the option 1 inside double quotes
-                b: "2", ///// Write the option 2 inside double quotes
-                c: "3", ///// Write the option 2 inside double quotes
-                d: "4", ///// Write the option 2 inside double quotes
+                a: " Best case O(nk)  ", ///// Write the option 1 inside double quotes
+                b: " Best case O(n<sup>2</sup>)  ", ///// Write the option 2 inside double quotes
+                c: "Worst case O(n<sup>2</sup>)   ", ///// Write the option 2 inside double quotes
+                d: "Average case O(nk) ", ///// Write the option 2 inside double quotes
+		e: "a an db ", ///// Write the option 2 inside double quotes
             },
-            correctAnswer: "b" ///// Write the correct option inside double quotes
+            correctAnswer: "e" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "2. Sample question2",  ///// Write the question inside double quotes
+      question: "2. Given N and b, what is k ?(N is the maximum value element in the array, b is the base of the number representation, k is the number of buckets you will need)",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: "k = ceil(log<sup>b</sup>N) ",                  ///// Write the option 1 inside double quotes
+        b: " k = floor(log<sup>b</sup>N) ",                  ///// Write the option 2 inside double quotes
+	c: "Depends  ", ///// Write the option 3 inside double quotes
+        d: "Can't say", ///// Write the option 4 inside double quotes
              },
       correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
 
 {
-      question: "3. Sample question3",  ///// Write the question inside double quotes
+      question: "3. What kind of sorting algorithm is radix sort?  ",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-             },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
-    },
-{
-      question: "4. Sample question4",  ///// Write the question inside double quotes
-      answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: " Comparison based, stable) ",                  ///// Write the option 1 inside double quotes
+        b: "Not comparison based, unstable  ",                  ///// Write the option 2 inside double quotes
+	c: "  Not comparison based, stable   ", ///// Write the option 3 inside double quotes
+        d: "None of the above  ", ///// Write the option 4 inside double quotes
              },
       correctAnswer: "c"                ///// Write the correct option inside double quotes
     },
