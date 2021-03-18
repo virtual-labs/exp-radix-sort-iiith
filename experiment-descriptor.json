@@ -138,8 +138,8 @@
       "unit-type": "task",
       "label": "Post Test Quiz",
       "content-type": "assesment",
-      "source": "post-test.js",
-      "target": "post-test.html"
+      "source": "posttest.js",
+      "target": "posttest.html"
     },
        
     {

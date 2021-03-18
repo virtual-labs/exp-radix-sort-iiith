@@ -1,5 +1,5 @@
 ### Identifying the digits
-<img src="images/digits.png"/>
+<img src="images/digits.jpg"/>
 
 ### The Radixsort Concept
 
