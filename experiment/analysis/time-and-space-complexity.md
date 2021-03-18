@@ -13,7 +13,7 @@ Now there will be d steps in order to sort the whole array.
 Hence the time complexity becomes O(nd)
 
 ### Explaining time complexity of Radix sort
-<img src="images/radix_complexity.png"/>
+<img src="images/radix_complexity.jpg"/>
 
 ### Space Complexity of Radix Sort
 

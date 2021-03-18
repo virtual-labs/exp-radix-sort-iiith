@@ -6,7 +6,7 @@
    - The resultant array obtained is a sorted array!
 
 ### Radix Sort steps
-<img src="images/radix.png"/>
+<img src="images/radix.jpg"/>
 
 ### Sorting using buckets
 
@@ -34,7 +34,7 @@ Array obtained as a result will be: 913, 315, 369, 287, 291.
 Sorting using buckets**
 
 ### Sorting using buckets
-<img src="images/demo_radix.png"/>
+<img src="images/demo_radix.jpg"/>
 
 ### Radix Sort Video
 <iframe src="https://www.youtube.com/embed/nu4gDuFabIM?start=4&end=52" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
