@@ -89,62 +89,39 @@
 
 
     const myQuestions = [{
-            question: "1. Sample question1", ///// Write the question inside double quotes
+            question: "1. Maximum number of comparisons required for one iteration on an array of size 5? ", ///// Write the question inside double quotes
             answers: {
-                a: "1", ///// Write the option 1 inside double quotes
-                b: "2", ///// Write the option 2 inside double quotes
- 		c: "3", ///// Write the option 3 inside double quotes
-                d: "4", ///// Write the option 4 inside double quotes
+                a: "4", ///// Write the option 1 inside double quotes
+                b: "5 ", ///// Write the option 2 inside double quotes
+ 		c: "3 ", ///// Write the option 3 inside double quotes
+                d: "6 ", ///// Write the option 4 inside double quotes
             },
-            correctAnswer: "c" ///// Write the correct option inside double quotes
+            correctAnswer: "b" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "2.Sample question2",  ///// Write the question inside double quotes
+      question: "2. Which element reaches its correct position at the end of the 1st iteration?",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: "Smallest element  ",                  ///// Write the option 1 inside double quotes
+        b: " Largest element",                  ///// Write the option 2 inside double quotes
+	c: "Middle element", ///// Write the option 3 inside double quotes
+        d: "No element ", ///// Write the option 4 inside double quotes
               },
       correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
 
 {
-      question: "3. Sample question3",  ///// Write the question inside double quotes
+      question: "3. When do we swap two elements in Selection Sort?",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: "At the start of an iteration",                  ///// Write the option 1 inside double quotes
+        b: "At the end of an iterations ",                  ///// Write the option 2 inside double quotes
+	c: "As soon as we find a minimum to update ", ///// Write the option 3 inside double quotes
+        d: "Middle of the iteration  ", ///// Write the option 4 inside double quotes
               },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
 
-{
-      question: "4.Sample question3",  ///// Write the question inside double quotes
-      answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-	e: "5 ", ///// Write the option 5 inside double quotes
-              },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
-    },
 
-{
-      question: "5. Sample question5",  ///// Write the question inside double quotes
-      answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3 ", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-	e: "5", ///// Write the option 4 inside double quotes
-              },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
-    },
-        
     ];
 
 
