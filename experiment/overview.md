@@ -1,6 +1,4 @@
-### Estimated Time
 
-1 hour
 ### Radixsort Introduction
 <iframe src="https://www.youtube.com/embed/OHGKHmBIJ9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
