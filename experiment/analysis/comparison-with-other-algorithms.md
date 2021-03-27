@@ -5,8 +5,8 @@
 
 |Algorithm Sort 	|Algorithm Average |	Time Best |Time	Worst |Features	Space |Features	Stability|
 |-----------------------|--------------------|-----------|------------|---------------|------------------|
-|Radix sort 	|O(nk) 	O(nk) 	|O(nk) |	O(n+b) |	Stable|
-|Bubble sort 	|O(n2) 	O(n2) |	O(n2) 	|Constant |	Stable|
+|Radix sort 	|O(nk) 	|O(nk) 	|O(nk) |	O(n+b) |	Stable|
+|Bubble sort 	|O(n2) 	|O(n2) |	O(n2) 	|Constant |	Stable|
 |Modified Bubble sort |	O(n2) 	|O(n) 	O(n2) |	Constant |	Stable|
 |Selection Sort 	|O(n2) |	O(n2) |	O(n2) |	Constant |	Stable|
 |Insertion Sort 	|O(n2) |	O(n) |	O(n2) |	Constant |	Stable|
