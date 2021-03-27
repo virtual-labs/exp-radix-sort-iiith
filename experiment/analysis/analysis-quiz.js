@@ -40,6 +40,7 @@
      function showResults() {
          // gather answer containers from our quiz
          const answerContainers = quizContainer.querySelectorAll(".answers");
+	answerContainers.forEach(e => e.style.color = "black");
 
          // keep track of user's answers
          let numCorrect = 0;
@@ -114,7 +115,7 @@
 {
       question: "3. What kind of sorting algorithm is radix sort?  ",  ///// Write the question inside double quotes
       answers: {
-        a: " Comparison based, stable) ",                  ///// Write the option 1 inside double quotes
+        a: " Comparison based, stable ",                  ///// Write the option 1 inside double quotes
         b: "Not comparison based, unstable  ",                  ///// Write the option 2 inside double quotes
 	c: "  Not comparison based, stable   ", ///// Write the option 3 inside double quotes
         d: "None of the above  ", ///// Write the option 4 inside double quotes
