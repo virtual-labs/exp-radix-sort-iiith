@@ -1,0 +1,17 @@
+[{
+	"question": "1. Radix Sort algorithm starts with the most significant bit of numbers ",
+	"answers": {
+		"a": "True",
+		"b": "False "
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "2. If there are N elements of b digits, how many buckets will be used in radix sort?",
+	"answers": {
+		"a": "O(N) ",
+		"b": "O(b)",
+		"c": "O(10)",
+		"d": "None of the above "
+	},
+	"correctAnswer": "c"
+}]
