@@ -21,6 +21,13 @@
       "target": "recap.html"
     },
     {
+      "unit-type": "task",
+      "label": "Pretest",
+      "content-type": "assessment",
+      "source": "pretest.json",
+      "target": "pretest.html"
+    },
+    {
       "unit-type": "lu",
       "label": "Radix Sort",
       "basedir": "radix-sort",
@@ -64,7 +71,14 @@
           "content-type": "simulation",
           "source": "simulation/radix_exercise.html",
           "target": "radix_exercise.html"
-        }
+        },
+	{
+      "unit-type": "task",
+      "label": "Quiz",
+      "content-type": "assessment",
+      "source": "radix-sort-quiz.json",
+      "target": "radix-sort-quiz.html"
+    }
       
       ]
     },
@@ -104,11 +118,24 @@
           "content-type": "video",
           "source": "comparison-with-other-algorithms.md",
           "target": "comparison-with-other-algorithms.html"
-        }
+        },
+	{
+      "unit-type": "task",
+      "label": "Quiz",
+      "content-type": "assessment",
+      "source": "analysis-quiz.json",
+      "target": "analysis-quiz.html"
+    }
       ]
     },
 
-       
+    {
+      "unit-type": "task",
+      "label": "Posttest",
+      "content-type": "assessment",
+      "source": "posttest.json",
+      "target": "posttest.html"
+    },   
     {
       "unit-type": "task",
       "label": "Further Readings/References",
