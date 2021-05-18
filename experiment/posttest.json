@@ -1,1 +1,42 @@
-[{"question":"1. Given an array where numbers are in range from 1 to n<sup>6</sup>, which sorting algorithm can be used to sort these numbers in linear time?  ","answers":{"a":" Not possible to sort in linear time ","b":"Radix Sort  ","c":"Bucket Sort ","d":"Quick Sort  "},"correctAnswer":"b"},{"question":"2. If we use Radix Sort to sort n integers in the range (n<Sup>k/2</sup>,n<sup>k</sup>, for some k>0 which is independent of n, the time taken would be? ","answers":{"a":"Theta(n) ","b":"Theta(k.n) ","c":"Theta(n.logn) ","d":"Theta(n<Sup>2</sup>) "},"correctAnswer":"c"},{"question":"3. If there are n integers to sort, each integer has d digits, and each digit is in the set {1, 2, ..., k}, radix sort can sort the numbers in: ","answers":{"a":"O(k (n + d)) ","b":"O(d (n + k)) ","c":"O((n + k) lg d)  ","d":"O((n + d) lg k) "},"correctAnswer":"b"},{"question":"4. Radix Sort uses which of the following as a subroutine? ","answers":{"a":"Merge Sort ","b":" Quick Sort ","c":"Counting Sort ","d":"Heap Sort "},"correctAnswer":"c"}]
+[{
+	"question": "1. Pick the incorrect option",
+	"answers": {
+		"a": "Radix sort uses buckets to hold numbers with the same value for the digit in consideration",
+		"b": "Radix sort can perform better than bubble sort  ",
+		"c": "Radix sort does not require any extra space ",
+		"d": "Radix sort starts with the least significant bit  "
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "2. Which extra data structure is used in radix sort?",
+	"answers": {
+		"a": "Heap ",
+		"b": "Array ",
+		"c": "Queue ",
+		"d": "None of the above "
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "3. Radix Sort has worse space complexity than Bubble Sort ",
+	"answers": {
+		"a": "True ",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "4. Radix sort is a generalization of which sorting algorithm",
+	"answers": {
+		"a": "Bubble Sort ",
+		"b": " Counting Sort ",
+		"c": "Selection Sort ",
+		"d": "Merge Sort "
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "5. Radix sort can perform better than comparison based sorting",
+	"answers": {
+		"a": "True ",
+		"b": " False"
+	},
+	"correctAnswer": "a"
+}]
