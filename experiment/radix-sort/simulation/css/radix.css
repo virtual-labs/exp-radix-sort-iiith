@@ -47,6 +47,6 @@ canvas{
 }
 
 p,span {
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     text-align: center;
 }
