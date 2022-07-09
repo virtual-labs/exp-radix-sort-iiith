@@ -31,6 +31,11 @@ canvas{
 
 .legend .red {
     background-color: red;
+    border-radius: 0%;
+    width: 3.2vw;
+    margin-top: 2.8%;
+    height: 0.35vw;
+    border: 0vw solid grey;
 }
 
 .comment-box {
