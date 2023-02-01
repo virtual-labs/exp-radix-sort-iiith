@@ -7,7 +7,7 @@
 |-----------------------|--------------------|-----------|------------|---------------|
 |Radix sort 	|O(nk) 	|O(nk) 	|O(nk) |	O(n+b) |
 |Bubble sort 	|O(n2) 	|O(n2) |	O(n2) 	|Constant |
-|Modified Bubble sort |	O(n2) 	|O(n) 	O(n2) |	Constant |
+|Modified Bubble sort |	O(n2) 	|O(n)  |	O(n2) |	Constant |
 |Selection Sort 	|O(n2) |	O(n2) |	O(n2) |	Constant |
 |Insertion Sort 	|O(n2) |	O(n) |	O(n2) |	Constant |
 |Heap Sort 	|O(n*log(n)) 	|O(n*log(n)) |	O(n*log(n)) |	Constant |
