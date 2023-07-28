@@ -1,0 +1,42 @@
+[{
+	"question": "1. Pick the incorrect option",
+	"answers": {
+		"a": "Radix sort uses buckets to hold numbers with the same value for the digit in consideration",
+		"b": "Radix sort can perform better than bubble sort  ",
+		"c": "Radix sort does not require any extra space ",
+		"d": "Radix sort starts with the least significant bit  "
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "2. Which extra data structure is used in radix sort?",
+	"answers": {
+		"a": "Heap ",
+		"b": "Array ",
+		"c": "Queue ",
+		"d": "None of the above "
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "3. Radix Sort has worse space complexity than Bubble Sort ",
+	"answers": {
+		"a": "True ",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "4. Radix sort is a generalization of which sorting algorithm",
+	"answers": {
+		"a": "Bubble Sort ",
+		"b": " Counting Sort ",
+		"c": "Selection Sort ",
+		"d": "Merge Sort "
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "5. Radix sort can perform better than comparison based sorting",
+	"answers": {
+		"a": "True ",
+		"b": " False"
+	},
+	"correctAnswer": "a"
+}]
