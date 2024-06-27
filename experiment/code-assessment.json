@@ -10,8 +10,8 @@
 
             ],
             "expected": [2, 24, 45, 66, 75, 90, 170, 802],
-            "inputs description": "Input consists of an array of unsorted array - inp1. It may be of arbitrary length.",
-            "expected description": "An array of numbers Eg. 1,2,4,5 sorted in ascending orders"
+            "inputs description": "Input consists of an array of unsorted array. It may be of arbitrary length.",
+            "expected description": "An array of numbers e.g. 1,2,4,5 sorted in ascending orders"
         },
         {
             "problem name": "Radix Sort for Fixed-Decimal Floats",
@@ -22,6 +22,16 @@
             ],
             "expected": [2.66, 24.02, 45.75, 90.80, 170.45, 802.24],
             "inputs description": "Input consists of an array of unsorted floating-point numbers - inp1. It may be of arbitrary length.",
+            "expected description": "An array of floating-point numbers sorted in ascending order."
+        },
+        {
+            "problem name": "Radix Sort for Variable-Decimal Floats",
+            "description": "Modify the Radix Sort algorithm to sort a list of floating-point numbers. The number of decimal places can vary between numbers in the list.",
+            "inputs": [
+                [170.4, 45.75, 90.8, 802.24, 24.02, 2.666]
+            ],
+            "expected": [2.666, 24.02, 45.75, 90.8, 170.4, 802.24],
+            "inputs description": "Input consists of an array of unsorted floating-point numbers with varying decimal places.",
             "expected description": "An array of floating-point numbers sorted in ascending order."
         }
     ]
