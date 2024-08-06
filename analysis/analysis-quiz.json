@@ -1,0 +1,17 @@
+[{
+	"question": "1. What's the time complexity of Radix Sort?<br>n is the number of elements & d is the maximum number of digits in any element of the array. ",
+	"answers": {
+		"a": " O(n*d)  ",
+		"b": " O(n+d) ",
+		"c": "O(n^2)   ",
+		"d": "O(d) "
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "2. Radix Sort has O(1) space complexity",
+	"answers": {
+		"a": "True ",
+		"b": " False "
+	},
+	"correctAnswer": "b"
+}]
