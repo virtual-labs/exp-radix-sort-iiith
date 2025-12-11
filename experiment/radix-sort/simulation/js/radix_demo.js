@@ -25,7 +25,7 @@ function handlers() {
     };
 
     document.getElementById('next').onclick = function() {
-        startSort();
+        toggleSort();
     };
     
     document.getElementById('step').onclick = function() {
@@ -35,16 +35,13 @@ function handlers() {
     document.getElementById('reset').onclick = function() {
         reset();
     };
-
-    document.getElementById('pause').onclick = function() {
-        pause();
-    };
 }
 
 
 function onLoadTriggers() {
     handlers();    
     reset();
+    draw();
 }
 
 document.body.onload = function() {
@@ -79,11 +76,11 @@ function draw() {
     );
 
     var commentBox = document.getElementById('ins');
-    if (radixArtefact.iterator === 0 && radixArtefact.position === 0) {
+    if (radixArtefact.iterator === 0 && radixArtefact.position === 0 && !radixArtefact.sorted) {
         commentBox.innerHTML =
             "Let's start sorting the array! We will first start sorting according to the " +
             radixArtefact.placeValue[radixArtefact.position] +
-            ' position';
+            ' position.';
     }
 
     if (radixArtefact.sorted) {
@@ -122,10 +119,10 @@ function takeAStep() {
             'List has now completed sorting according to ' +
             radixArtefact.placeValue[radixArtefact.position] +
             ' position.<br/>' +
-            ' Notice all the elements were picked up from the buckets and put back in the array in order from b[0] to b[9]' +
+            'Notice all the elements were picked up from the buckets and put back in the array in order from b[0] to b[9].<br/>' +
             'Now we will start sorting according to the ' +
             radixArtefact.placeValue[radixArtefact.position + 1] +
-            ' position';
+            ' position.';
         radixArtefact.position++;
         bucketsToList();
         clearBuckets();
