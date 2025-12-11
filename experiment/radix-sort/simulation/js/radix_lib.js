@@ -26,29 +26,50 @@ class RadixSort {
 
 function reset() {
     radixArtefact.sorted = false;
+    
+    // Reset array size to default (8)
+    radixArtefact.arraySize = 8;
+    var arraySizeInput = document.getElementById('array_length');
+    if (arraySizeInput) {
+        arraySizeInput.value = 8;
+    }
+    
     initializeList();
     clearBuckets();
     radixArtefact.iterator = 0;
     radixArtefact.position = 0;
+    radixArtefact.digit = undefined;
     
-    var pause = document.getElementById('pause');
-    if (pause) {
-        radixArtefact.interval.play = false;
-        clearInterval(radixArtefact.interval.obj);
-        pause.disabled = true;
-        document.getElementById('next').disabled = false;
-        document.getElementById('nelements').disabled = false;
-        var slider = document.getElementById('interval');
-        if (slider) {
-            var speed = slider.value;
-            if(speed > radixArtefact.minSpeed) {
-                document.getElementById('step').hidden = true;
-                document.getElementById('next').hidden = false;
-                document.getElementById('pause').hidden = false;
-            }
+    // Stop any running animation
+    radixArtefact.interval.play = false;
+    clearInterval(radixArtefact.interval.obj);
+    
+    // Reset button states (only for demo page)
+    var nextButton = document.getElementById('next');
+    if (nextButton) {
+        nextButton.textContent = 'Start';
+    }
+    var nElementsBtn = document.getElementById('nelements');
+    if (nElementsBtn) {
+        nElementsBtn.disabled = false;
+    }
+    
+    // Reset comment box to initial state
+    var commentBox = document.getElementById('ins');
+    if (commentBox) {
+        commentBox.innerHTML = 'Click Start to begin sorting the array.';
+    }
+    
+    // Handle step button visibility based on slider (demo page only)
+    var slider = document.getElementById('interval');
+    var stepBtn = document.getElementById('step');
+    if (slider && stepBtn && nextButton) {
+        var speed = slider.value;
+        if(speed > radixArtefact.minSpeed) {
+            stepBtn.hidden = true;
+            nextButton.hidden = false;
         }
     }
-
 
     draw();
 }
@@ -66,8 +87,52 @@ function validSize(size) {
 
 
 function changeArray() {
-    radixArtefact.arraySize = validSize(Number(document.getElementById('array_length').value));
-    reset();
+    var newSize = validSize(Number(document.getElementById('array_length').value));
+    radixArtefact.arraySize = newSize;
+    
+    // Update input field to show validated size
+    document.getElementById('array_length').value = newSize;
+    
+    // Reset simulation state but keep the new array size
+    radixArtefact.sorted = false;
+    initializeList();
+    clearBuckets();
+    radixArtefact.iterator = 0;
+    radixArtefact.position = 0;
+    radixArtefact.digit = undefined;
+    
+    // Stop any running animation
+    radixArtefact.interval.play = false;
+    clearInterval(radixArtefact.interval.obj);
+    
+    // Reset button states (only for pages that have these elements)
+    var nextButton = document.getElementById('next');
+    if (nextButton) {
+        nextButton.textContent = 'Start';
+    }
+    var nElementsBtn = document.getElementById('nelements');
+    if (nElementsBtn) {
+        nElementsBtn.disabled = false;
+    }
+    
+    // Reset comment box to initial state
+    var commentBox = document.getElementById('ins');
+    if (commentBox) {
+        commentBox.innerHTML = 'Click Start to begin sorting the array.';
+    }
+    
+    // Handle step button visibility based on slider (demo page only)
+    var slider = document.getElementById('interval');
+    var stepBtn = document.getElementById('step');
+    if (slider && stepBtn && nextButton) {
+        var speed = slider.value;
+        if(speed > radixArtefact.minSpeed) {
+            stepBtn.hidden = true;
+            nextButton.hidden = false;
+        }
+    }
+    
+    draw();
 }
 
 
@@ -229,21 +294,23 @@ function changeInterval() {
         var speed = Number(slider.value);
         
         if (speed === Number(radixArtefact.minSpeed)) {
-            pause();
+            // Switch to step mode
+            if (radixArtefact.interval.play) {
+                radixArtefact.interval.play = false;
+                clearInterval(radixArtefact.interval.obj);
+                document.getElementById('next').textContent = 'Start';
+            }
             document.getElementById('step').hidden = false;
             document.getElementById('next').hidden = true;
-            document.getElementById('pause').hidden = true;
         } else {
             document.getElementById('step').hidden = true;
             document.getElementById('next').hidden = false;
-            document.getElementById('pause').hidden = false;
 
             if (radixArtefact.interval.play) {
                 clearInterval(radixArtefact.interval.obj);
                 radixArtefact.interval.obj = setInterval(
                     control,
-                    radixArtefact.minInterval -
-                        (1.7 * speed)
+                    radixArtefact.maxSpeed + radixArtefact.minSpeed - speed
                 );
             }
         }
@@ -251,30 +318,49 @@ function changeInterval() {
 }
 
 
-function startSort() {
-    radixArtefact.interval.play = true;
-    radixArtefact.interval.obj = setInterval(
-        control,
-        2600 - Number(document.getElementById('interval').value)
-    );
-    document.getElementById('pause').disabled = false;
-    document.getElementById('next').disabled = true;
-    document.getElementById('nelements').disabled = true;
+function toggleSort() {
+    var nextButton = document.getElementById('next');
+    var slider = document.getElementById('interval');
+    var speed = slider ? Number(slider.value) : radixArtefact.maxSpeed / 2;
+    
+    // If sorted, reset on click
+    if (radixArtefact.sorted) {
+        reset();
+        return;
+    }
+    
+    // If currently playing, pause it
+    if (radixArtefact.interval.play) {
+        radixArtefact.interval.play = false;
+        clearInterval(radixArtefact.interval.obj);
+        nextButton.textContent = 'Resume';
+        document.getElementById('nelements').disabled = false;
+    } else {
+        // Start or resume
+        radixArtefact.interval.play = true;
+        radixArtefact.interval.obj = setInterval(
+            control,
+            radixArtefact.maxSpeed + radixArtefact.minSpeed - speed
+        );
+        nextButton.textContent = 'Pause';
+        document.getElementById('nelements').disabled = true;
+    }
 }
 
 
-function pause() {
-    radixArtefact.interval.play = false;
-    clearInterval(radixArtefact.interval.obj);
-    document.getElementById('pause').disabled = true;
-    document.getElementById('next').disabled = false;
-    document.getElementById('nelements').disabled = false;
-}
+
 
 
 function control() {
     if (radixArtefact.interval.play) {
         step();
+        // If sorting just completed, update button
+        if (radixArtefact.sorted) {
+            radixArtefact.interval.play = false;
+            clearInterval(radixArtefact.interval.obj);
+            document.getElementById('next').textContent = 'End';
+            document.getElementById('nelements').disabled = false;
+        }
     }
 }
 
