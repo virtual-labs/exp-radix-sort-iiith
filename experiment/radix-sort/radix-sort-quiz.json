@@ -4,7 +4,11 @@
 		"a": "True",
 		"b": "False "
 	},
-	"correctAnswer": "b"
+	"correctAnswer": "b",
+	"explanations": {
+		"a": "Incorrect. Radix sort typically starts with the least significant digit (LSD) and progresses toward the most significant digit.",
+		"b": "Correct. Radix sort algorithm starts with the least significant bit (LSD) and moves toward the most significant bit, ensuring stable sorting at each digit position."
+	}
 }, {
 	"question": "2. If there are N elements of b digits, how many buckets will be used in radix sort?",
 	"answers": {
@@ -13,5 +17,11 @@
 		"c": "O(10)",
 		"d": "None of the above "
 	},
-	"correctAnswer": "c"
+	"correctAnswer": "c",
+	"explanations": {
+		"a": "Incorrect. The number of buckets depends on the radix (base), not the number of elements.",
+		"b": "Incorrect. b represents the number of digits, not the number of buckets needed.",
+		"c": "Correct. Radix sort uses 10 buckets (one for each digit 0-9) when sorting decimal numbers, regardless of N or b.",
+		"d": "Incorrect. Option c correctly identifies the number of buckets."
+	}
 }]
