@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "experiment name": "Radix Sort",
+    "problems": [
+        {
+            "problem name": "Basic Radix Sort",
+            "description": "Implement the Radix Sort algorithm to sort an array of non-negative integers in ascending order. Radix Sort is a non-comparative sorting algorithm that processes digits from least significant to most significant, using counting sort as a subroutine for each digit position. Sort the array by examining each digit position (ones, tens, hundreds, etc.) and grouping numbers accordingly until all digits are processed. Example: [170, 45, 75, 90, 802, 24, 2, 66] should become [2, 24, 45, 66, 75, 90, 170, 802]. Only JavaScript is allowed.",
+            "inputs": [
+                [170, 45, 75, 90, 802, 24, 2, 66]
+
+            ],
+            "expected": [2, 24, 45, 66, 75, 90, 170, 802],
+            "inputs description": "Input consists of an array of unsorted array. It may be of arbitrary length.",
+            "expected description": "An array of numbers e.g. 1,2,4,5 sorted in ascending orders",
+            "difficulty": "beginner"
+        },
+        {
+            "problem name": "Radix Sort for Fixed-Decimal Floats",
+            "description": "Modify the Radix Sort algorithm to sort an array of floating-point numbers where all numbers have the same number of decimal places. Convert each floating-point number to an integer representation by removing the decimal point (e.g., 170.45 becomes 17045), then apply standard radix sort on these integer representations, and finally restore the decimal representation in the sorted output. This approach leverages radix sort's digit-by-digit processing while handling decimal values. Example: [170.45, 45.75, 90.80, 802.24, 24.02, 2.66] should become [2.66, 24.02, 45.75, 90.80, 170.45, 802.24]. Only JavaScript is allowed.",
+            "inputs": [
+                [170.45, 45.75, 90.80, 802.24, 24.02, 2.66]
+
+            ],
+            "expected": [2.66, 24.02, 45.75, 90.80, 170.45, 802.24],
+            "inputs description": "Input consists of an array of unsorted floating-point numbers - inp1. It may be of arbitrary length.",
+            "expected description": "An array of floating-point numbers sorted in ascending order.",
+            "difficulty": "intermediate"
+        },
+        {
+            "problem name": "Radix Sort for Variable-Decimal Floats",
+            "description": "Implement an advanced version of Radix Sort to handle floating-point numbers with varying decimal places. First determine the maximum number of decimal places in the array, then normalize all numbers to have the same precision by padding with zeros (e.g., 170.4 becomes 170.400 when max decimals is 3), convert to integer representations, apply radix sort, and restore the original decimal representation preserving the original precision of each number. Example: [170.4, 45.75, 90.8, 802.24, 24.02, 2.666] should become [2.666, 24.02, 45.75, 90.8, 170.4, 802.24]. Only JavaScript is allowed.",
+            "inputs": [
+                [170.4, 45.75, 90.8, 802.24, 24.02, 2.666]
+            ],
+            "expected": [2.666, 24.02, 45.75, 90.8, 170.4, 802.24],
+            "inputs description": "Input consists of an array of unsorted floating-point numbers with varying decimal places.",
+            "expected description": "An array of floating-point numbers sorted in ascending order.",
+            "difficulty": "advanced"
+        }
+    ]
+}

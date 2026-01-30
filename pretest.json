@@ -1,0 +1,86 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Pick the equivalent of log100.",
+      "answers": {
+        "a": "log10",
+        "b": "2log10",
+        "c": "log1000",
+        "d": "0"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. log100 = log(10^2) = 2log10, not just log10.",
+        "b": "Correct. log100 = log(10^2) = 2log10, using the logarithm power rule.",
+        "c": "Incorrect. log1000 = log(10^3) = 3log10, which is not equivalent to log100.",
+        "d": "Incorrect. log100 is not equal to 0; log1 = 0."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. If each element of the array is traversed N (size of the array) times, what is the time complexity of the algorithm?",
+      "answers": {
+        "a": "O(N)",
+        "b": "O(N^2)",
+        "c": "O(2N)",
+        "d": "O(N^3)"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. O(N) would be the complexity if each element is visited only once.",
+        "b": "Correct. If each of the N elements is traversed N times, the total operations are N * N = N^2, giving O(N^2) time complexity.",
+        "c": "Incorrect. O(2N) simplifies to O(N) in asymptotic notation, which does not account for nested traversals.",
+        "d": "Incorrect. O(N^3) would require three nested loops over N elements."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Pick the correct option.",
+      "answers": {
+        "a": "Array has O(1) lookup time complexity",
+        "b": "The elements of an array are stored contiguously in memory",
+        "c": "Array can be used to implement stacks & queues",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. While this is true, it is not the complete answer as options b and c are also correct.",
+        "b": "Incorrect. While this is true, it is not the complete answer as options a and c are also correct.",
+        "c": "Incorrect. While this is true, it is not the complete answer as options a and b are also correct.",
+        "d": "Correct. All the given statements are true: arrays have O(1) lookup time, store elements contiguously, and can implement stacks and queues."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. What is the complexity of searching a number in an unsorted array?",
+      "answers": {
+        "a": "O(N)",
+        "b": "O(N^2)",
+        "c": "O(NlogN)",
+        "d": "O(N^3)"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. In an unsorted array, linear search is required, checking each element sequentially until the target is found or the array ends, giving O(N) complexity.",
+        "b": "Incorrect. O(N^2) would involve nested iterations, which is not needed for simple searching.",
+        "c": "Incorrect. O(NlogN) is typically associated with efficient sorting algorithms, not searching in unsorted arrays.",
+        "d": "Incorrect. O(N^3) would involve triple nested loops, which is far too complex for a search operation."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Space complexity refers to the amount of memory taken by the algorithm in asymptotic notation.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Space complexity measures the amount of memory an algorithm uses as a function of input size, expressed in asymptotic notation.",
+        "b": "Incorrect. Space complexity is about memory usage, not time."
+      },
+      "difficulty": "beginner"
+    }
+  ]
+}
